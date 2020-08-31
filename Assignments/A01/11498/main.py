@@ -1,7 +1,9 @@
 if __name__ == "__main__":
     K=1
-    while K!=0:
+    while K>0:
         K = int(input())
+        if (K == 0):
+            break
         N = int(input())
         M = int(input())
         for i in range (K):
