@@ -1,4 +1,4 @@
-# 4883-Programming-Techniques-Laden
+# 4883-Programming-Techniques
 ## Brent Laden
 #### Repo: 4883-Programming Techniques
 #### Email: brelad41@gmail.com
