@@ -1,27 +1,27 @@
-if __name__ == "__main__":
+def main():
     K=1
     while K>0:
         K = int(input())
         if (K == 0):
             break
-        N = int(input())
-        M = int(input())
+        N,  M = map(int,input().split())
         for i in range (K):
-            X = int(input())
-            Y = int(input())
-            if (N<X):       #north
-                if (M<Y):   #northeast
+            X, Y = map(int,input().split())
+            if (M<Y):       #north
+                if (N<X):   #northeast
                     print('NE')
-                elif (M>Y): #northwest
+                elif (N>X): #northwest
                     print('NO')
-                else:       #equal
+                elif (N==X):       #equal
                     print('divisa')
-            elif (N>X):     #south
-                if (M<Y):   #southeast
+            elif (M>Y):     #south
+                if (N<X):   #southeast
                     print('SE')
-                elif (M>Y): #southwest
+                elif (N>X): #southwest
                     print('SO')
-                else:       #equal
+                elif (N==X):       #equal
                     print('divisa')
             else:           #equal
                 print('divisa')
+if __name__ == "__main__":
+    main()
